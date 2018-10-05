@@ -1,0 +1,113 @@
+.BOS_Login {
+    background-image: url("./../images/da2cd925bffd14af304889883503c2fa95defa14.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-family: "Lato", sans-serif; }
+    .BOS_Login .form-heading {
+      color: #fff;
+      font-size: 23px; }
+    .BOS_Login .panel {
+      margin-bottom: 0; }
+      .BOS_Login .panel h2 {
+        color: #444444;
+        font-size: 18px;
+        margin: 0 0 8px 0; }
+      .BOS_Login .panel p {
+        color: #777777;
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 24px; }
+    .BOS_Login .login-form .form-control {
+      background: #f7f7f7 none repeat scroll 0 0;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px; }
+    .BOS_Login .main-div {
+      background: #ffffff none repeat scroll 0 0;
+      border-radius: 2px;
+      width: 400px;
+      padding: 20px 50px 70px 51px;
+      height: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -200px;
+      margin-top: -200px;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+      .BOS_Login .main-div.resetpassword {
+        width: 400px;
+        padding: 20px 50px 70px 51px;
+        height: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -175px; }
+    .BOS_Login .login-form {
+      text-align: center; }
+      .BOS_Login .login-form .form-group {
+        margin-bottom: 10px; }
+    .BOS_Login .login-form .btn.btn-primary {
+      background: #eb5d0b none repeat scroll 0 0;
+      border-color: #eb5d0b;
+      color: #ffffff;
+      font-size: 14px;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      padding: 0;
+      transition: background-color 0.5s ease; }
+      .BOS_Login .login-form .btn.btn-primary:hover {
+        background: #933601 none repeat scroll 0 0;
+        border-color: #933601;
+        transition: background-color 0.5s ease; }
+    .BOS_Login .forgot {
+      text-align: left;
+      margin-bottom: 30px;
+      float: left;
+      width: 50%; }
+      .BOS_Login .forgot a {
+        color: #777777;
+        font-size: 14px;
+        text-decoration: none; }
+        .BOS_Login .forgot a:hover {
+          text-decoration: underline; }
+    .BOS_Login .register {
+      text-align: right;
+      margin-bottom: 30px;
+      float: left;
+      width: 50%; }
+      .BOS_Login .register a {
+        color: #777777;
+        font-size: 14px;
+        text-decoration: none; }
+        .BOS_Login .register a:hover {
+          text-decoration: underline; }
+    .BOS_Login .botto-text {
+      color: #ffffff;
+      font-size: 14px;
+      margin: auto; }
+    .BOS_Login .login-form .btn.btn-primary.reset {
+      background: #ff9900 none repeat scroll 0 0; }
+    .BOS_Login .back {
+      text-align: left;
+      margin-top: 10px; }
+      .BOS_Login .back a {
+        color: #444444;
+        font-size: 13px;
+        text-decoration: none; }
+    .BOS_Login .none {
+      display: none; }
+
+   .BOS_Login .hasError {
+    border:1px solid red;
+    border-radius: 4px;
+   }
