@@ -144,16 +144,16 @@ export function RenderUserCards(props) {
                         <div className="clearfix"></div>
                         <div className="row margin0">
                             <div className="col-md-12">                             
-                                <h1>
+                                <h2 className="fontawesome">
                                     <i className="fab fa-facebook facebook"></i>&nbsp;
                                     <i className="fab fa-twitter-square twitter"></i>&nbsp;
                                     <i className="fab fa-youtube-square youtube"></i>&nbsp;
                                     <i className="fab fa-linkedin linkedin"></i>&nbsp;
                                     <i className="fab fa-pinterest-square pinterest"></i>&nbsp;
                                     <i className="fab fa-instagram instagram"></i>
-                                </h1>
+                                </h2>
                                 <h5><i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="far fa-star grey"></i><span className="reviews">6 reviews</span></h5>
-                                <h5 className="text-right more_info">More Info</h5>
+                                <h5 className="text-right more_info"><a href="/user/5"> More Info</a></h5>
                             </div>
                         </div>
 

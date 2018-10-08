@@ -1,4 +1,3 @@
-
 .BOS_Profile {
     background-image: url("../images/da2cd925bffd14af304889883503c2fa95defa14.jpg");
     background-repeat: no-repeat;
@@ -12,12 +11,12 @@
     font-family: "Lato", sans-serif;
 }
 
-    .BOS_Profile .container-fluid, .BOS_Profile .container-fluid {
+    .BOS_Profile .container, .BOS_Profile .container-fluid {
         background: rgba(255, 255, 255, 0.2);
         padding: 0;
     }
 
-        .BOS_Profile .container-fluid .header, .BOS_Profile .container-fluid .header {
+        .BOS_Profile .container .header, .BOS_Profile .container-fluid .header {
             height: 60px;
             width: 100%;
             float: left;
@@ -26,33 +25,33 @@
             color: #fff;
         }
 
-            .BOS_Profile .container-fluid .header a, .BOS_Profile .container-fluid .header a {
+            .BOS_Profile .container .header a, .BOS_Profile .container-fluid .header a {
                 color: #fff;
                 text-decoration: none;
             }
 
-                .BOS_Profile .container-fluid .header a:hover, .BOS_Profile .container-fluid .header a:focus, .BOS_Profile .container-fluid .header a:hover, .BOS_Profile .container-fluid .header a:focus {
+                .BOS_Profile .container .header a:hover, .BOS_Profile .container .header a:focus, .BOS_Profile .container-fluid .header a:hover, .BOS_Profile .container-fluid .header a:focus {
                     color: #eb5d0b;
                     text-decoration: underline;
                 }
 
-            .BOS_Profile .container-fluid .header h2, .BOS_Profile .container-fluid .header h2 {
+            .BOS_Profile .container .header h2, .BOS_Profile .container-fluid .header h2 {
                 margin-top: 5px;
                 color: #eb5d0b;
             }
 
-                .BOS_Profile .container-fluid .header h2 img, .BOS_Profile .container-fluid .header h2 img {
+                .BOS_Profile .container .header h2 img, .BOS_Profile .container-fluid .header h2 img {
                     margin-right: 10px;
                 }
 
-        .BOS_Profile .container-fluid .main_body, .BOS_Profile .container-fluid .main_body {
+        .BOS_Profile .container .main_body, .BOS_Profile .container-fluid .main_body {
             width: 100%;
             float: left;
             height: auto;
             position: relative;
         }
 
-            .BOS_Profile .container-fluid .main_body.loggedin .left, .BOS_Profile .container-fluid .main_body.loggedin .left {
+            .BOS_Profile .container .main_body.loggedin .left, .BOS_Profile .container-fluid .main_body.loggedin .left {
                 width: 100px;
                 height: calc(100vh - 90px);
                 position: absolute;
@@ -62,7 +61,7 @@
                 background: rgba(0, 0, 0, 0.7);
             }
 
-                .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation {
+                .BOS_Profile .container .main_body.loggedin .left .vertical_navigation, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation {
                     height: 100px;
                     width: 100%;
                     text-align: center;
@@ -71,18 +70,18 @@
                     padding-top: 20px;
                 }
 
-                    .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation.selected, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation:hover, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation.selected, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation:hover {
+                    .BOS_Profile .container .main_body.loggedin .left .vertical_navigation.selected, .BOS_Profile .container .main_body.loggedin .left .vertical_navigation:hover, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation.selected, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation:hover {
                         background: #353535;
                         color: #eb5d0b;
                         cursor: pointer;
                     }
 
-                    .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation i, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation i {
+                    .BOS_Profile .container .main_body.loggedin .left .vertical_navigation i, .BOS_Profile .container-fluid .main_body.loggedin .left .vertical_navigation i {
                         font-size: 30px;
                         clear: both;
                     }
 
-            .BOS_Profile .container-fluid .main_body.loggedin .right, .BOS_Profile .container-fluid .main_body.loggedin .right {
+            .BOS_Profile .container .main_body.loggedin .right, .BOS_Profile .container-fluid .main_body.loggedin .right {
                 height: calc(100vh - 90px);
                 width: calc(100% - 100px);
                 margin-left: 100px;
@@ -91,13 +90,13 @@
                 overflow-y: auto;
             }
 
-            .BOS_Profile .container-fluid .main_body.loggedin label, .BOS_Profile .container-fluid .main_body.loggedin label {
+            .BOS_Profile .container .main_body.loggedin label, .BOS_Profile .container-fluid .main_body.loggedin label {
                 color: #fff;
                 font-size: 20px;
                 font-weight: 300;
             }
 
-            .BOS_Profile .container-fluid .main_body .left, .BOS_Profile .container-fluid .main_body .left {
+            .BOS_Profile .container .main_body .left, .BOS_Profile .container-fluid .main_body .left {
                 width: 200px;
                 height: calc(100vh - 90px);
                 position: absolute;
@@ -106,7 +105,7 @@
                 background: rgba(0, 0, 0, 0.7);
             }
 
-            .BOS_Profile .container-fluid .main_body .right, .BOS_Profile .container-fluid .main_body .right {
+            .BOS_Profile .container .main_body .right, .BOS_Profile .container-fluid .main_body .right {
                 height: calc(100vh - 90px);
                 width: 100%;
                 /*margin-left: 200px;*/
@@ -115,13 +114,13 @@
                 overflow-y: auto;
             }
 
-                .BOS_Profile .container-fluid .main_body .right .custom-search-input, .BOS_Profile .container-fluid .main_body .right .custom-search-input {
+                .BOS_Profile .container .main_body .right .custom-search-input, .BOS_Profile .container-fluid .main_body .right .custom-search-input {
                     margin: 0;
                     margin-top: 0;
                     padding: 0;
                 }
 
-                    .BOS_Profile .container-fluid .main_body .right .custom-search-input .search-query, .BOS_Profile .container-fluid .main_body .right .custom-search-input .search-query {
+                    .BOS_Profile .container .main_body .right .custom-search-input .search-query, .BOS_Profile .container-fluid .main_body .right .custom-search-input .search-query {
                         padding-right: 3px;
                         padding-right: 4px \9;
                         padding-left: 3px;
@@ -135,38 +134,38 @@
                         width: 100%;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right .custom-search-input .btn-danger, .BOS_Profile .container-fluid .main_body .right .custom-search-input .btn-danger {
+                    .BOS_Profile .container .main_body .right .custom-search-input .btn-danger, .BOS_Profile .container-fluid .main_body .right .custom-search-input .btn-danger {
                         background: #eb5d0b none repeat scroll 0 0;
                         border-color: #eb5d0b;
                     }
 
-                        .BOS_Profile .container-fluid .main_body .right .custom-search-input .btn-danger:hover, .BOS_Profile .container-fluid .main_body .right .custom-search-input .btn-danger:hover {
+                        .BOS_Profile .container .main_body .right .custom-search-input .btn-danger:hover, .BOS_Profile .container-fluid .main_body .right .custom-search-input .btn-danger:hover {
                             background: #933601 none repeat scroll 0 0;
                             border-color: #933601;
                             transition: background-color 0.5s ease;
                         }
 
-                .BOS_Profile .container-fluid .main_body .right .search-query:focus + button, .BOS_Profile .container-fluid .main_body .right .search-query:focus + button {
+                .BOS_Profile .container .main_body .right .search-query:focus + button, .BOS_Profile .container-fluid .main_body .right .search-query:focus + button {
                     z-index: 3;
                 }
 
-                .BOS_Profile .container-fluid .main_body .right p, .BOS_Profile .container-fluid .main_body .right p {
+                .BOS_Profile .container .main_body .right p, .BOS_Profile .container-fluid .main_body .right p {
                     margin-bottom: 20px;
                 }
 
-                    .BOS_Profile .container-fluid .main_body .right p:first-of-type, .BOS_Profile .container-fluid .main_body .right p:first-of-type {
+                    .BOS_Profile .container .main_body .right p:first-of-type, .BOS_Profile .container-fluid .main_body .right p:first-of-type {
                         margin-bottom: 0;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right p:nth-of-type(2), .BOS_Profile .container-fluid .main_body .right p:nth-of-type(2) {
+                    .BOS_Profile .container .main_body .right p:nth-of-type(2), .BOS_Profile .container-fluid .main_body .right p:nth-of-type(2) {
                         margin-top: 20px;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right p label, .BOS_Profile .container-fluid .main_body .right p label {
+                    .BOS_Profile .container .main_body .right p label, .BOS_Profile .container-fluid .main_body .right p label {
                         margin-bottom: 0;
                     }
 
-                        .BOS_Profile .container-fluid .main_body .right p label select, .BOS_Profile .container-fluid .main_body .right p label select {
+                        .BOS_Profile .container .main_body .right p label select, .BOS_Profile .container-fluid .main_body .right p label select {
                             color: #9c9a9a;
                             font-weight: 400;
                             padding-right: 3px;
@@ -182,14 +181,14 @@
                             margin-left: 5px;
                         }
 
-                .BOS_Profile .container-fluid .main_body .right .user_profile_outer, .BOS_Profile .container-fluid .main_body .right .user_profile_outer {
+                .BOS_Profile .container .main_body .right .user_profile_outer, .BOS_Profile .container-fluid .main_body .right .user_profile_outer {
                     width: 200px;
                     height: auto;
                     float: left;
                     text-align: center;
                 }
 
-                    .BOS_Profile .container-fluid .main_body .right .user_profile_outer .user_profile_inner, .BOS_Profile .container-fluid .main_body .right .user_profile_outer .user_profile_inner {
+                    .BOS_Profile .container .main_body .right .user_profile_outer .user_profile_inner, .BOS_Profile .container-fluid .main_body .right .user_profile_outer .user_profile_inner {
                         width: 100%;
                         height: 200px;
                         background: #ffffff;
@@ -197,7 +196,7 @@
                         float: left;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right .user_profile_outer .btn-primary, .BOS_Profile .container-fluid .main_body .right .user_profile_outer .btn-primary {
+                    .BOS_Profile .container .main_body .right .user_profile_outer .btn-primary, .BOS_Profile .container-fluid .main_body .right .user_profile_outer .btn-primary {
                         background: #fff none repeat scroll 0 0;
                         border-color: #fff;
                         color: #000;
@@ -207,89 +206,89 @@
                         transition: background-color .5s ease;
                     }
 
-                        .BOS_Profile .container-fluid .main_body .right .user_profile_outer .btn-primary:hover:hover, .BOS_Profile .container-fluid .main_body .right .user_profile_outer .btn-primary:hover:hover {
+                        .BOS_Profile .container .main_body .right .user_profile_outer .btn-primary:hover:hover, .BOS_Profile .container-fluid .main_body .right .user_profile_outer .btn-primary:hover:hover {
                             background: #e5e5e5 none repeat scroll 0 0;
                             border-color: #e5e5e5;
                             transition: background-color 0.5s ease;
                         }
 
-                .BOS_Profile .container-fluid .main_body .right .username, .BOS_Profile .container-fluid .main_body .right .username {
+                .BOS_Profile .container .main_body .right .username, .BOS_Profile .container-fluid .main_body .right .username {
                     width: calc(100% - 200px);
                     padding: 0 20px;
                     float: left;
                 }
 
-                    .BOS_Profile .container-fluid .main_body .right .username h1, .BOS_Profile .container-fluid .main_body .right .username h1 {
+                    .BOS_Profile .container .main_body .right .username h1, .BOS_Profile .container-fluid .main_body .right .username h1 {
                         color: #fff;
                         margin-top: 5px;
                         margin-bottom: 0;
                     }
 
-                        .BOS_Profile .container-fluid .main_body .right .username h1 .edit_button, .BOS_Profile .container-fluid .main_body .right .username h1 .edit_button {
+                        .BOS_Profile .container .main_body .right .username h1 .edit_button, .BOS_Profile .container-fluid .main_body .right .username h1 .edit_button {
                             cursor: pointer;
                         }
 
-                        .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome {
+                        .BOS_Profile .container .main_body .right .username h1.fontawesome, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome {
                             color: #49b1c1;
                             font-size: 28px;
                         }
 
-                            .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .facebook, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .facebook {
+                            .BOS_Profile .container .main_body .right .username h1.fontawesome .facebook, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .facebook {
                                 color: #3B5998;
                             }
 
-                            .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .twitter, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .twitter {
+                            .BOS_Profile .container .main_body .right .username h1.fontawesome .twitter, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .twitter {
                                 color: #1DA1F2;
                             }
 
-                            .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .pinterest, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .pinterest {
+                            .BOS_Profile .container .main_body .right .username h1.fontawesome .pinterest, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .pinterest {
                                 color: #BD081C;
                             }
 
-                            .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .instagram, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .instagram {
+                            .BOS_Profile .container .main_body .right .username h1.fontawesome .instagram, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .instagram {
                                 color: #fb3958;
                             }
 
-                            .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .linkedin, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .linkedin {
+                            .BOS_Profile .container .main_body .right .username h1.fontawesome .linkedin, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .linkedin {
                                 color: #0077B5;
                             }
 
-                            .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .youtube, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .youtube {
+                            .BOS_Profile .container .main_body .right .username h1.fontawesome .youtube, .BOS_Profile .container-fluid .main_body .right .username h1.fontawesome .youtube {
                                 color: #ff0000;
                             }
 
-                    .BOS_Profile .container-fluid .main_body .right .username h3, .BOS_Profile .container-fluid .main_body .right .username h3 {
+                    .BOS_Profile .container .main_body .right .username h3, .BOS_Profile .container-fluid .main_body .right .username h3 {
                         color: #fff;
                         margin-top: 5px;
                         margin-bottom: 0;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right .username h4, .BOS_Profile .container-fluid .main_body .right .username h4 {
+                    .BOS_Profile .container .main_body .right .username h4, .BOS_Profile .container-fluid .main_body .right .username h4 {
                         color: #fff;
                         margin-top: 5px;
                         margin-bottom: 0;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right .username h5, .BOS_Profile .container-fluid .main_body .right .username h5 {
+                    .BOS_Profile .container .main_body .right .username h5, .BOS_Profile .container-fluid .main_body .right .username h5 {
                         color: #fff;
                     }
 
-                .BOS_Profile .container-fluid .main_body .right h4, .BOS_Profile .container-fluid .main_body .right h4 {
+                .BOS_Profile .container .main_body .right h4, .BOS_Profile .container-fluid .main_body .right h4 {
                     color: #000;
                     margin-top: 5px;
                     margin-bottom: 10px;
                 }
 
-                    .BOS_Profile .container-fluid .main_body .right h4.bigraphy, .BOS_Profile .container-fluid .main_body .right h4.bigraphy {
+                    .BOS_Profile .container .main_body .right h4.bigraphy, .BOS_Profile .container-fluid .main_body .right h4.bigraphy {
                         color: #fff;
                     }
 
-                .BOS_Profile .container-fluid .main_body .right p, .BOS_Profile .container-fluid .main_body .right p {
+                .BOS_Profile .container .main_body .right p, .BOS_Profile .container-fluid .main_body .right p {
                     color: #fff;
                     font-size: 14px;
                 }
 
-                .BOS_Profile .container-fluid .main_body .right .BOS_card, .BOS_Profile .container-fluid .main_body .right .BOS_card {
+                .BOS_Profile .container .main_body .right .BOS_card, .BOS_Profile .container-fluid .main_body .right .BOS_card {
                     width: 100%;
                     height: 168px;
                     background: rgba(255, 255, 255, 0.8);
@@ -298,7 +297,7 @@
                     border-radius: 4px;
                 }
 
-                    .BOS_Profile .container-fluid .main_body .right .BOS_card .user_image, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_image {
+                    .BOS_Profile .container .main_body .right .BOS_card .user_image, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_image {
                         width: 60px;
                         height: 60px;
                         float: left;
@@ -309,50 +308,79 @@
                         margin-top: 5px;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name {
+                    .BOS_Profile .container .main_body .right .BOS_card .user_name, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name {
                         width: calc(100% - 65px);
                         padding: 5px 10px;
                         color: #000;
                         float: left;
                     }
 
-                        .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name h4, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name h4 {
+                        .BOS_Profile .container .main_body .right .BOS_card .user_name h4, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name h4 {
                             margin-top: 0;
                             margin-bottom: 5px;
                             color: #000;
                             font-weight: 400;
                         }
 
-                        .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name h5, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name h5 {
+                        .BOS_Profile .container .main_body .right .BOS_card .user_name h5, .BOS_Profile .container-fluid .main_body .right .BOS_card .user_name h5 {
                             margin-top: 0;
                             margin-bottom: 5px;
                             color: #000;
                         }
 
-                    .BOS_Profile .container-fluid .main_body .right .BOS_card h2, .BOS_Profile .container-fluid .main_body .right .BOS_card h2 {
+                    .BOS_Profile .container .main_body .right .BOS_card h2, .BOS_Profile .container-fluid .main_body .right .BOS_card h2 {
                         margin-top: 0;
-                        color: #49b1c1;
+                        color: #fff;
                         font-size: 24px;
                     }
 
-                    .BOS_Profile .container-fluid .main_body .right .BOS_card h5, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 {
+                        .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome {
+                            color: #49b1c1;
+                            font-size: 28px;
+                        }
+
+                            .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome .facebook, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome .facebook {
+                                color: #3B5998;
+                            }
+
+                            .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome .twitter, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome .twitter {
+                                color: #1DA1F2;
+                            }
+
+                            .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome .pinterest, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome .pinterest {
+                                color: #BD081C;
+                            }
+
+                            .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome .instagram, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome .instagram {
+                                color: #fb3958;
+                            }
+
+                            .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome .linkedin, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome .linkedin {
+                                color: #0077B5;
+                            }
+
+                            .BOS_Profile .container .main_body .right .BOS_card h2.fontawesome .youtube, .BOS_Profile .container-fluid .main_body .right .BOS_card h2.fontawesome .youtube {
+                                color: #ff0000;
+                            }
+
+                    .BOS_Profile .container .main_body .right .BOS_card h5, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 {
                         margin-top: 0;
                     }
 
-                        .BOS_Profile .container-fluid .main_body .right .BOS_card h5.more_info, .BOS_Profile .container-fluid .main_body .right .BOS_card h5.more_info {
+                        .BOS_Profile .container .main_body .right .BOS_card h5.more_info, .BOS_Profile .container-fluid .main_body .right .BOS_card h5.more_info {
                             color: #000;
                             cursor: pointer;
                         }
 
-                        .BOS_Profile .container-fluid .main_body .right .BOS_card h5 i, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 i {
+                        .BOS_Profile .container .main_body .right .BOS_card h5 i, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 i {
                             color: #eb5d0b;
                         }
 
-                            .BOS_Profile .container-fluid .main_body .right .BOS_card h5 i.grey, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 i.grey {
+                            .BOS_Profile .container .main_body .right .BOS_card h5 i.grey, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 i.grey {
                                 color: #767676;
                             }
 
-                        .BOS_Profile .container-fluid .main_body .right .BOS_card h5 span, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 span {
+                        .BOS_Profile .container .main_body .right .BOS_card h5 span, .BOS_Profile .container-fluid .main_body .right .BOS_card h5 span {
                             color: #000;
                             margin-left: 10px;
                         }

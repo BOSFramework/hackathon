@@ -53,13 +53,13 @@ export default class UserDetails extends Component {
                                         <h5>
                                             Heavy Metal
                                         </h5>
-                                        <h1>
-                                            <i className="fab fa-facebook"></i>&nbsp;
-                                            <i className="fab fa-twitter-square"></i>&nbsp;
-                                            <i className="fab fa-youtube-square"></i>&nbsp;
-                                            <i className="fab fa-linkedin"></i>&nbsp;
-                                            <i className="fab fa-pinterest-square"></i>&nbsp;
-                                            <i className="fab fa-instagram"></i>&nbsp;
+                                        <h1 className="fontawesome">
+                                            <i className="fab fa-facebook facebook"></i>&nbsp;
+                                            <i className="fab fa-twitter-square twitter"></i>&nbsp;
+                                            <i className="fab fa-youtube-square youtube"></i>&nbsp;
+                                            <i className="fab fa-linkedin linkedin"></i>&nbsp;
+                                            <i className="fab fa-pinterest-square pinterest"></i>&nbsp;
+                                            <i className="fab fa-instagram instagram"></i>&nbsp;
                                         </h1>
                                         <h5>Next Performance: Revention Music Center. 520 Texas St, Houston, TX on 10/15/2018</h5>
                                         <h4>Calendar: <i class="far fa-calendar-alt"></i></h4>
