@@ -32,7 +32,7 @@ export default class UserDetails extends Component {
   render() {    
     return (     
         <div className="BOS_Profile">
-        <div className="container">
+        <div className="container-fluid">
                 <Header />
             <div className="main_body">           
                 <div className="right">

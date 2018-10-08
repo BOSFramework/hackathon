@@ -73,7 +73,7 @@ export default class Users extends Component {
         else {
             return (
                 <div className="BOS_Profile">
-                    <div className="container">
+                    <div className="container-fluid">
                         <Header />
                         <div className="main_body">
                             <div className="right">
@@ -132,7 +132,7 @@ export function RenderUserCards(props) {
         {props.users.map(user => {
             var defaultimage = (user !== undefined && user.ImageUrl !== undefined) ? '' : '/src/components/images/user3.png';
             return (
-                <div className="col-sm-4 margintop10 marginbottom10">
+                <div className="col-md-4 col-lg-3 margintop15 marginbottom10">
                     <div className="BOS_card" key={user.id.toString()}>
                         <div className="user_image" style={{ background: "url('" + defaultimage + "')", backgroundSize: "cover" }}></div>
                         <div className="user_name">
@@ -143,15 +143,15 @@ export function RenderUserCards(props) {
                         </div>
                         <div className="clearfix"></div>
                         <div className="row margin0">
-                            <div className="col-md-12">
-                                <h2>
-                                    <i className="fab fa-facebook"></i>&nbsp;
-                                    <i className="fab fa-twitter-square"></i>&nbsp;
-                                    <i className="fab fa-youtube-square"></i>&nbsp;
-                                    <i className="fab fa-linkedin"></i>&nbsp;
-                                    <i className="fab fa-pinterest-square"></i>&nbsp;
-                                    <i className="fab fa-instagram"></i>
-                                </h2>
+                            <div className="col-md-12">                             
+                                <h1>
+                                    <i className="fab fa-facebook facebook"></i>&nbsp;
+                                    <i className="fab fa-twitter-square twitter"></i>&nbsp;
+                                    <i className="fab fa-youtube-square youtube"></i>&nbsp;
+                                    <i className="fab fa-linkedin linkedin"></i>&nbsp;
+                                    <i className="fab fa-pinterest-square pinterest"></i>&nbsp;
+                                    <i className="fab fa-instagram instagram"></i>
+                                </h1>
                                 <h5><i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="far fa-star grey"></i><span className="reviews">6 reviews</span></h5>
                                 <h5 className="text-right more_info">More Info</h5>
                             </div>

@@ -1,13 +1,14 @@
 # Hackathon
 # Using `create-react-app` with React Router + Express.js
 
-#Posible routes
-#http://localhost:3000/login
-#http://localhost:3000/register
-#http://localhost:3000/forgotpassword
-#http://localhost:3000/users/
-#http://localhost:3000/user/Id
-
+#Posible routes          
+#http://localhost:3000/login => Login 
+#http://localhost:3000/register  => Register 
+#http://localhost:3000/forgotpassword  => Forgot Password 
+#http://localhost:3000/users/  => Users List & search
+#http://localhost:3000/user/Id  => Login       
+#http://localhost:3000/Profile  => Edit Profile        
+#http://localhost:3000/Calendar  => Calendar 
 
 Install dependencies:
 

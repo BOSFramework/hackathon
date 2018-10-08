@@ -37,7 +37,7 @@ function requireAuth(nextState, replace) {
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact={true} component={APP} />
+            <Route path="/" exact={true} component={LoginContainer} />
             <Route path="/App/*" component={LoginContainer} />           
             <Route path="/Calendar" component={Calendar} />
             <Route path="/Profile" component={Profile} onEnter={requireAuth} />

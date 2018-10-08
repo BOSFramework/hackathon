@@ -135,7 +135,7 @@ var loginData={ email: this.state.email,
 const LoginContainer = (params) => {
     return (
         <div className="BOS_Login">
-            <div className="container">
+            <div className="container-fluid">
                 <Header />
                 <Switch>
                     <Route path="/App/login" component={Login} />
