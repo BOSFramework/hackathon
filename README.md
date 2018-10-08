@@ -6,8 +6,8 @@ Posible routes
 #http://localhost:3000/register => Register<br />
 #http://localhost:3000/forgotpassword  => Forgot Password<br />
 #http://localhost:3000/users/ => Users List & search<br />
-#http://localhost:3000/user/Id => Login<br />     
-#http://localhost:3000/Profile => Edit Profile<br />     
+#http://localhost:3000/user/Id => Login<br />
+#http://localhost:3000/Profile => Edit Profile<br />
 #http://localhost:3000/Calendar => Calendar<br />
 
 Install dependencies:
