@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Header from './login';
 import './login.css';
-import { Redirect } from 'react-router';
 export default class Register extends Component {
     constructor(props) {
         super(props);       
@@ -101,34 +102,30 @@ export default class Register extends Component {
 
 
         render() {    
-            return (
-              <div className="BOS_Login">
-                    <div className="container">
-                    <div className="login-form">
+            return (                
+                        <div className="login-form" id="register_section">
                             <div className="main-div">
                                 <div className="panel">
                                     <h1>Register</h1>
                                     <p>Please enter email address & password</p>
                                 </div>
-                                <form id="Login" className={(this.state.formValid)?"was-validated":""}>
+                                <form id="register" className={(this.state.formValid) ? "was-validated" : ""}>
                                     <div className={`form-group ${this.errorClass(this.state.formErrors.email)}`}>
                                         <input type="email" name="email" className="form-control" id="inputEmail" placeholder="Email Address"
-                                         onChange={(event) => this.handleUserInput(event)}/>
+                                            onChange={(event) => this.handleUserInput(event)} />
                                     </div>
                                     <div className={`form-group ${this.errorClass(this.state.formErrors.password)}`}>
                                         <input type="password" name="password" className="form-control" id="inputPassword" placeholder="Password"
-                                         onChange={(event) => this.handleUserInput(event)}/>
+                                            onChange={(event) => this.handleUserInput(event)} />
                                     </div>
                                     <div className={`form-group ${this.errorClass(this.state.formErrors.confirmPassword)}`}>
                                         <input type="password" name="confirmPassword" className="form-control" id="inputConfirmPassword" placeholder="Retype Password"
-                                         onChange={(event) => this.handleUserInput(event)}/>
+                                            onChange={(event) => this.handleUserInput(event)} />
                                     </div>
-                                    <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={(event)=>this.submitRegisterForm(event,this.state)}>Submit</button>
+                                    <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={(event) => this.submitRegisterForm(event, this.state)}>Submit</button>
                                 </form>
                             </div>
-                        </div>                    
-                    </div>
-             </div> 
+                        </div>
             );
           }
-    }
+}

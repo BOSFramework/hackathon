@@ -1,7 +1,7 @@
 // src/components/About/index.js
 import React, { Component } from 'react';
 
-import './style.css';
+//import './style.css';
 
 class About extends Component {
   static propTypes = {}

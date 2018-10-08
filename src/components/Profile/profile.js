@@ -1,7 +1,7 @@
 // src/components/About/index.js
 import React, { Component } from 'react';
 
-import './profile.css';
+//import './profile.css';
 
 class Profile extends Component {
   static propTypes = {}

@@ -20,6 +20,13 @@ Start the project at [`http://localhost:3000`](http://localhost:3000).
 ```sh
 npm start
 ```
+To create a production bundle.
+
+```sh
+npm run build
+```
+
+
 
 ## Running with Docker
 

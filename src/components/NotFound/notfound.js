@@ -1,7 +1,7 @@
 // src/components/NotFound/index.js
 import React, { Component } from 'react';
 
-import './notfound.css';
+//import './notfound.css';
 
 export default class NotFound extends Component {
   static propTypes = {}

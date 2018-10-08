@@ -1,7 +1,7 @@
 // src/components/About/index.js
 import React, { Component } from 'react';
 import './users.css';
-
+import Header from '../../components/Layout/header';
 export default class UserDetails extends Component {
     constructor(props) {
         super(props);
@@ -33,9 +33,7 @@ export default class UserDetails extends Component {
     return (     
         <div className="BOS_Profile">
         <div className="container">
-            <div className="header">
-                <h2>Logo</h2>
-            </div>
+                <Header />
             <div className="main_body">           
                 <div className="right">
                     <div className="row">                                   
@@ -43,7 +41,7 @@ export default class UserDetails extends Component {
                             <div className="row margin0">
                                 <div className="col-md-12 margintop15">
                                     <div className="user_profile_outer">
-                                        <div className="user_profile_inner"></div>
+                                            <div className="user_profile_inner" style={{ background:"url('/src/components/images/user2.png') no-repeat", backgroundSize:"cover", border:"none"}}></div>
                                         <button className="btn btn-primary margintop10 marginright5">Edit</button>
                                         <button className="btn btn-primary margintop10">Save</button>
                                     </div>
@@ -56,12 +54,12 @@ export default class UserDetails extends Component {
                                             Heavy Metal
                                         </h5>
                                         <h1>
-                                            <i className="fab fa-facebook"></i>
-                                            <i className="fab fa-twitter-square"></i>
-                                            <i className="fab fa-youtube-square"></i>
-                                            <i className="fab fa-linkedin"></i>
-                                            <i className="fab fa-pinterest-square"></i>
-                                            <i className="fab fa-instagram"></i>
+                                            <i className="fab fa-facebook"></i>&nbsp;
+                                            <i className="fab fa-twitter-square"></i>&nbsp;
+                                            <i className="fab fa-youtube-square"></i>&nbsp;
+                                            <i className="fab fa-linkedin"></i>&nbsp;
+                                            <i className="fab fa-pinterest-square"></i>&nbsp;
+                                            <i className="fab fa-instagram"></i>&nbsp;
                                         </h1>
                                         <h5>Next Performance: Revention Music Center. 520 Texas St, Houston, TX on 10/15/2018</h5>
                                         <h4>Calendar: <i class="far fa-calendar-alt"></i></h4>
