@@ -2,13 +2,13 @@
 # Using `create-react-app` with React Router + Express.js
 
 Posible routes          
-#http://localhost:3000/login => Login<br />
-#http://localhost:3000/register => Register<br />
-#http://localhost:3000/forgotpassword  => Forgot Password<br />
-#http://localhost:3000/users/ => Users List & search<br />
-#http://localhost:3000/user/Id => Login<br />
-#http://localhost:3000/Profile => Edit Profile<br />
-#http://localhost:3000/Calendar => Calendar<br />
+http://localhost:3000/App/Login    => Login<br />
+http://localhost:3000/App/Register => Register<br />
+http://localhost:3000/App/ForgotPassword  => Forgot Password<br />
+http://localhost:3000/Users/ => Users List & search<br />
+http://localhost:3000/User/Id => Login<br />
+http://localhost:3000/Profile => Edit Profile<br />
+http://localhost:3000/Calendar => Calendar<br />
 
 Install dependencies:
 

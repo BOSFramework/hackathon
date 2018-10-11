@@ -1,4 +1,3 @@
-// src/components/About/index.js
 import React, { Component } from 'react';
 import './users.css';
 import Header from '../../components/Layout/header';
@@ -13,12 +12,12 @@ export default class UserDetails extends Component {
       }
      componentDidMount() {
         console.log('Component DID MOUNT!')
-        debugger;
+        
         this.setState({loading:true});
         
         // axios.get(`https://jsonplaceholder.typicode.com/users`)
         // .then(res => {
-        //  debugger; 
+        //   
         //   const persons = res.data;
         //   this.setState({ loading: false, users: persons });
         // })
@@ -89,8 +88,7 @@ export default class UserDetails extends Component {
                 </div>
             </div>
         </div>
-    </div> 
-     
+    </div>      
     );
   }
 }

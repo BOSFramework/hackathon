@@ -1,13 +1,7 @@
-// src/components/About/index.js
 import React, { Component } from 'react';
-
 import '../Users/users.css';
 import Header from '../../components/Layout/header';
-class Profile extends Component {
-    static propTypes = {}
-    static defaultProps = {}
-    state = {}
-
+class Profile extends Component {  
     render() {
         return (
             <div className="BOS_Profile">

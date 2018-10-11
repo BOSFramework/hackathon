@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import ReactDom from 'react-dom';
+import React from 'react';
 const Header = () => {
 	return (
         <div className="header">

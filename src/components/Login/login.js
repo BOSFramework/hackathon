@@ -1,22 +1,15 @@
 // src/components/Login/login.js
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
 import axios from 'axios';
 import './login.css';
-import { BrowserRouter, Route, Link, Switch, Redirect, browserHistory, IndexRoute } from 'react-router-dom';
+import {  Route,Switch} from 'react-router-dom';
 import Register from './register';
 import ForgotPassword from './forgotpassword';
 import Header from './../Layout/header';
 import './login.css';
-debugger;
-
-
-
-
 export default class Login extends Component { 
   constructor(props) {
     super(props);
-   
     this.state = {
         email:'',
         password:'',
@@ -25,28 +18,20 @@ export default class Login extends Component {
         passwordValid: false,
         formValid: false      
     }
-
   }
-
-
-
   handleUserInput (e) {
-      debugger;
   const name = e.target.name;
   const value = e.target.value;
   this.setState({[name]: value},() => { this.validateField(name, value) });
   }
-
   validateField(fieldName, value) {
-    debugger;
     let fieldValidationErrors = this.state.formErrors;
     let emailValid = this.state.emailValid;
     let passwordValid = this.state.passwordValid;
-  
     switch(fieldName) {
       case 'email':
-        emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors.email = (emailValid !== null && emailValid !== undefined) ? '' : ' is invalid';
+            emailValid = (value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) !== null && value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) !== undefined)? true :false ;
+        fieldValidationErrors.email = (emailValid !== false && emailValid !== undefined) ? '' : ' is invalid';
         break;
       case 'password':
         passwordValid = value.length >= 1;
@@ -65,26 +50,20 @@ export default class Login extends Component {
   validateForm() {
     this.setState({formValid: this.state.emailValid && this.state.passwordValid});
   }
-
-  
-
 //eror class to apply to form-group to indicate error
   errorClass(error) {
     return(error.length === 0 ? '' : "hasError");
  }
-
-submitLoginForm(){
+  submitLoginForm(){
 var loginData={ email: this.state.email,
                 password: this.state.password 
               };
-
    var settings={
         method:"post",
         url:"api/login",
         data:loginData, //JSON.Stringify(loginData)
         headers:{'Content-Type':'application/json;utf-8;'}
     };
-
     axios.request(settings)
     .then(function (response) {
      //this.props.history.push(`/target`)
@@ -98,9 +77,7 @@ var loginData={ email: this.state.email,
     .catch(function (error) {
     console.log(error);
     });
- 
 }
-
   render() {    
       return (            
                   <div className="login-form" id="login_section">
@@ -124,14 +101,13 @@ var loginData={ email: this.state.email,
                               <div className="register">
                                   <a href="/App/Register">Register</a>
                               </div>
-                              <button type="button" className="btn btn-primary" disabled={!this.state.formValid} >Login</button>
+                      <button type="button" className="btn btn-primary" disabled={!this.state.formValid} onClick={(event) => this.submitLoginForm(event)}>Login</button>
                           </form>
                       </div>
                   </div>             
     );
   }
 }
-
 const LoginContainer = (params) => {
     return (
         <div className="BOS_Login">
@@ -147,10 +123,8 @@ const LoginContainer = (params) => {
     );
 }
 export default LoginContainer;
-
-
 // export const FormErrors = ({formErrors}) =>{
-//     debugger;   
+//        
 //    return( <div className='formErrors'>
 //       {
 //         Object.keys(formErrors).map((fieldName, i) => {
@@ -165,7 +139,3 @@ export default LoginContainer;
 //     </div>
 //    );
 // }
-
-
-  
-
