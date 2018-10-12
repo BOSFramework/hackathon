@@ -39,10 +39,10 @@ Let's create an image named `hackathon`:
 docker build -t hackathon .
 ```
 
-Finally, start a container named `hackathon-instance` at port `80`.
+Finally, start a container named `hackathon-instance` at port `9000`.
 
 ```sh
-docker run -p 80:9000 --name hackathon-instance hackathon
+docker run -p 9000:9000 --name hackathon-instance hackathon
 ```
 
 ## Testing
