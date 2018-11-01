@@ -11,10 +11,10 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        email:'',
+        username:'',
         password:'',
-        formErrors: {email: '', password: ''},
-        emailValid: false,
+        formErrors: {username: '', password: ''},
+        usernameValid: false,
         passwordValid: false,
         formValid: false      
     }
@@ -26,12 +26,12 @@ export default class Login extends Component {
   }
   validateField(fieldName, value) {
     let fieldValidationErrors = this.state.formErrors;
-    let emailValid = this.state.emailValid;
+    let usernameValid = this.state.usernameValid;
     let passwordValid = this.state.passwordValid;
     switch(fieldName) {
-      case 'email':
-            emailValid = (value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) !== null && value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) !== undefined)? true :false ;
-        fieldValidationErrors.email = (emailValid !== false && emailValid !== undefined) ? '' : ' is invalid';
+      case 'username':
+            usernameValid = (value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) !== null && value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) !== undefined)? true :false ;
+        fieldValidationErrors.username = (usernameValid !== false && usernameValid !== undefined) ? '' : ' is invalid';
         break;
       case 'password':
         passwordValid = value.length >= 1;
@@ -42,25 +42,25 @@ export default class Login extends Component {
     }
      //After validation set state
     this.setState({formErrors: fieldValidationErrors,
-                    emailValid: emailValid,
+                    usernameValid: usernameValid,
                     passwordValid: passwordValid
                   }, this.validateForm);
   }
-  //set formValid to false if email and password are not valid.
+  //set formValid to false if username and password are not valid.
   validateForm() {
-    this.setState({formValid: this.state.emailValid && this.state.passwordValid});
+    this.setState({formValid: this.state.usernameValid && this.state.passwordValid});
   }
 //eror class to apply to form-group to indicate error
   errorClass(error) {
     return(error.length === 0 ? '' : "hasError");
  }
   submitLoginForm(){
-var loginData={ email: this.state.email,
+var loginData={ username: this.state.username,
                 password: this.state.password 
               };
    var settings={
         method:"post",
-        url:"api/login",
+        url:"http://localhost:5123/verify",
         data:loginData, //JSON.Stringify(loginData)
         headers:{'Content-Type':'application/json;utf-8;'}
     };
@@ -84,12 +84,12 @@ var loginData={ email: this.state.email,
                       <div className="main-div">
                           <div className="panel">
                               <h1>Login</h1>
-                              <p>Please enter your email and password</p>
+                              <p>Please enter your username and password</p>
                           </div>
                           <form id="Login" className={(this.state.formValid) ? "was-validated" : ""}>
-                              <div className={`form-group ${this.errorClass(this.state.formErrors.email)}`}>
-                                  <input type="email" name="email" className="form-control" id="inputEmail" placeholder="Email Address"
-                                      value={this.state.email} onChange={(event) => this.handleUserInput(event)} />
+                              <div className={`form-group ${this.errorClass(this.state.formErrors.username)}`}>
+                                  <input type="username" name="username" className="form-control" id="inputusername" placeholder="Username Address"
+                                      value={this.state.username} onChange={(event) => this.handleUserInput(event)} />
                               </div>
                               <div className={`form-group ${this.errorClass(this.state.formErrors.password)}`}>
                                   <input type="password" name="password" className="form-control" id="inputPassword" placeholder="Password"
@@ -133,7 +133,7 @@ export default LoginContainer;
 //             <span key={i} style={{ color:'red'}}>{fieldName} {formErrors[fieldName]}</span>
 //           )        
 //         } else {
-//           return 'Please enter email address & password';
+//           return 'Please enter username address & password';
 //         }
 //       })}
 //     </div>
