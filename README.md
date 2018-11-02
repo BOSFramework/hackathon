@@ -1,14 +1,35 @@
 # Hackathon
 # Using `create-react-app` with React Router + Express.js
 
-Posible routes          
-http://localhost:3000/App/Login    => Login<br />
-http://localhost:3000/App/Register => Register<br />
-http://localhost:3000/App/ForgotPassword  => Forgot Password<br />
-http://localhost:3000/Users/ => Users List & search<br />
-http://localhost:3000/User/Id => Login<br />
-http://localhost:3000/Profile => Edit Profile<br />
-http://localhost:3000/Calendar => Calendar<br />
+Posible routes for react application        
+http://localhost:9000/App/Login    => Login<br />
+http://localhost:9000/App/Register => Register<br />
+http://localhost:9000/App/ForgotPassword  => Forgot Password<br />
+http://localhost:9000/Users/ => Users List & search<br />
+http://localhost:9000/User/Id => Login<br />
+http://localhost:9000/Profile => Edit Profile<br />
+http://localhost:9000/Calendar => Calendar<br />
+
+
+Posible routes for Express Server API calls        
+http://localhost:8080/api/auth/verification POST  => Login<br />
+http://localhost:8080/api/user/ Post => Register<br />
+http://localhost:8080/api/roles GET =>Fetch application roles<br />
+http://localhost:8080/api/roles(:userid) POST => assign role to user <br />
+http://localhost:8080/api/userrole(:userid) GET=> Retrieve Roles for a given user<br />
+http://localhost:8080/api/people GET=> Get People<br />
+http://localhost:8080/api/people POST=> Add Person<br />
+http://localhost:8080/api/people(:personid) PUT=> Update Person<br />
+http://localhost:8080/api/people(:personid) GET=> GET Person<br />
+http://localhost:8080/api/assets GET=> Get Assets<br />
+http://localhost:8080/api/assets(:assetid) GET=> Get Asset<br />
+http://localhost:8080/api/assets POST=> Add Assets<br />
+http://localhost:8080/api/assets(:asstid) DELETE=> Delete Assets<br />
+http://localhost:8080/api/collections GET=> Get collections<br />
+http://localhost:8080/api/collections(:collectionid) GET=> Get Collection<br />
+http://localhost:8080/api/collections(:collectionid) POST=> Add Collection<br />
+http://localhost:8080/api/collections(:collectionid) POST=> Delete Collection<br />
+http://localhost:8080/api/collections(:collectionid) PUT=> Update Collection<br />
 
 Install dependencies:
 
@@ -16,10 +37,12 @@ Install dependencies:
 npm install
 ```
 
-Start the project at [`http://localhost:3000`](http://localhost:3000).
+Start the project at [`http://localhost:9000`](http://localhost:9000). 
+React Application will be running at [`http://localhost:9000`](http://localhost:9000) 
+and Express Server with BOS API calls will be runing at [`http://localhost:8080/api`](http://localhost:8080/api) 
 
 ```sh
-npm start
+node server
 ```
 To create a production bundle.
 
